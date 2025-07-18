@@ -4,7 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import Menu from './components/Menu/Menu';
 import Chef from './components/Chef/Chef';
-import Gallery from './components/Gallery/Gallery';
+//import Gallery from './components/Gallery/Gallery';
 import './index.css'; 
 import Footer from './components/Footer/Footer';
 
@@ -19,7 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/chef" element={<Chef/>} />
-          <Route path="/gallery" element={<Gallery />} />
+       
         </Routes>
         <Footer/>
     </>

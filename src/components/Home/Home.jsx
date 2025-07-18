@@ -3,6 +3,7 @@ import Hero from '../Hero/Hero'
 import Dishes from '../Dishes/Dishes'
 import Chef from '../Chef/Chef'
 import Time from '../Time/Time'
+import Gallery from '../Gallery/Gallery';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
     <Dishes/>
     <Chef/>
     <Time/>
+    <Gallery/>
     </div>
   )
 }
