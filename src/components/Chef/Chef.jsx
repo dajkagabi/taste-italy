@@ -5,7 +5,7 @@ const Chef = () => {
   return (
     <section className="bg-white py-16 px-6 lg:px-24 text-gray-800">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-12">
-        {/* Bal oldal - kép */}
+   í
         <div className="lg:w-1/2 w-full">
           <img
             src={chef}
@@ -14,7 +14,7 @@ const Chef = () => {
           />
         </div>
 
-        {/* Jobb oldal - szöveg */}
+        
         <div className="lg:w-1/2 w-full text-left">
           <h2 className="text-4xl font-bold mb-4">Meet Our Chef</h2>
           <h3 className="text-2xl font-semibold mb-2">Marco Rossi</h3>
@@ -25,7 +25,7 @@ const Chef = () => {
             <p className="text-sm text-gray-500 uppercase tracking-widest">Signature Dish</p>
             <p className="text-xl font-medium mt-1">Seafood Risotto</p>
           </div>
-          <button className="mt-4 px-6 py-3 bg-red-600 text-white rounded-full hover:bg-red-700 transition">
+          <button className="mt-4 px-6 py-3 bg-[#C0392B] text-white rounded-full hover:bg-[#C0392B] transition">
             Meet Our Team
           </button>
         </div>
