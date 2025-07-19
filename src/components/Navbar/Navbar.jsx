@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu } from "@mui/icons-material";
+import { Menu as MenuIcon } from "@mui/icons-material";
 import logo from "/src/assets/logo.png";
 
 export default function Navbar() {
@@ -12,7 +12,6 @@ export default function Navbar() {
   return (
     <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-        {/* Logo */}
         <Link
           to="/"
           className="flex items-center gap-2 text-gray-800 font-semibold text-lg"
@@ -25,7 +24,6 @@ export default function Navbar() {
           <span className="hidden sm:inline">La Tavola – Taste of Italy</span>
         </Link>
 
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-6 text-gray-700 font-medium">
           <Link to="/" className="hover:text-[#C0392B]">
             Home
@@ -49,18 +47,16 @@ export default function Navbar() {
             Order Now
           </Link>
         </div>
-         {/* */}
+         
 
-        {/* Hamburger Icon for Mobile */}
         <button
           onClick={toggleMenu}
           className="md:hidden text-gray-700 focus:outline-none"
         >
-          <Menu fontSize="large" />
+          <MenuIcon fontSize="large" />
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 shadow-md">
           <nav className="flex flex-col px-4 py-3 space-y-2 text-gray-700 font-medium">

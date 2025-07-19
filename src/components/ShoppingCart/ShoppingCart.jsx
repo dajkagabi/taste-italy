@@ -2,12 +2,11 @@ import React from 'react';
 import CartItem from '../CartItem/CartItem';
 import OrderSummary from '../OrderSummary/OrderSummary';
 
-//Kosár, termékek, mennyiség,
-const OrderNow = ({ cartItems = [], onQuantityChange, onRemove }) => { 
+function ShoppingCart({ cartItems, onQuantityChange, onRemove }) {
   return (
-    <div className="min-h-screen bg-white text-gray-900 p-8">
+    <div className="min-h-screen bg-gray-900 text-white p-8">
       <div className="container mx-auto">
-        <h1 className="text-3xl font-bold mb-8">Your Order</h1>
+        <h1 className="text-3xl font-bold mb-8">Shopping Cart</h1>
 
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="flex-1">
@@ -21,7 +20,7 @@ const OrderNow = ({ cartItems = [], onQuantityChange, onRemove }) => {
                 />
               ))
             ) : (
-              <p className="text-lg text-gray-600">Your cart is empty. Please add some items from the menu.</p>
+              <p className="text-lg text-gray-400">Your cart is empty.</p>
             )}
           </div>
 
@@ -34,4 +33,4 @@ const OrderNow = ({ cartItems = [], onQuantityChange, onRemove }) => {
   );
 }
 
-export default OrderNow;
+export default ShoppingCart;

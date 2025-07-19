@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"; 
 import StarIcon from "@mui/icons-material/Star";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
 import ma from "../../assets/ma.jpg";
@@ -21,6 +21,7 @@ const menuItems = [
       "A classic Neapolitan pizza with tomato, mozzarella, and fresh basil.",
     image: ma,
     rating: 5,
+    price: 12.50, 
   },
   {
     id: 2,
@@ -29,6 +30,7 @@ const menuItems = [
       "Creamy spaghetti with guanciale, egg yolk, Pecorino Romano cheese, and black pepper.",
     image: h2,
     rating: 4,
+    price: 15.00, 
   },
   {
     id: 3,
@@ -37,6 +39,7 @@ const menuItems = [
       "Layered pasta with slow-cooked ragù, béchamel sauce, and Parmesan cheese.",
     image: la,
     rating: 4,
+    price: 18.20, 
   },
   {
     id: 4,
@@ -45,6 +48,7 @@ const menuItems = [
       "Coffee-soaked ladyfingers with mascarpone cream and cocoa powder.",
     image: ti,
     rating: 5,
+    price: 7.00, 
   },
   {
     id: 5,
@@ -52,6 +56,7 @@ const menuItems = [
     description: "Creamy Arborio rice with wild mushrooms and Parmesan cheese.",
     image: ri,
     rating: 4,
+    price: 16.80, 
   },
   {
     id: 6,
@@ -59,6 +64,7 @@ const menuItems = [
     description: "Soft potato dumplings tossed in a vibrant basil pesto sauce.",
     image: gn,
     rating: 3,
+    price: 14.50, 
   },
   {
     id: 7,
@@ -67,6 +73,7 @@ const menuItems = [
       "Toasted bread rubbed with garlic, topped with fresh tomatoes, basil, and olive oil.",
     image: br,
     rating: 4,
+    price: 8.00, 
   },
   {
     id: 8,
@@ -74,6 +81,7 @@ const menuItems = [
     description: "Braised veal shanks with vegetables, white wine, and broth.",
     image: osso,
     rating: 5,
+    price: 22.00, 
   },
   {
     id: 9,
@@ -82,10 +90,19 @@ const menuItems = [
       "Sweetened cream thickened with gelatin and molded, often served with berries.",
     image: pn,
     rating: 4,
+    price: 6.50, 
   },
 ];
 
-const Menu = () => {
+
+const Menu = ({ onAddToCart }) => {
+  const navigate = useNavigate(); 
+
+  const handleOrderNowClick = (item) => {
+    onAddToCart(item); 
+    navigate('/order'); 
+  };
+
   return (
     <div className="container mx-auto px-10 py-20 bg-white text-gray-900">
       <h1 className="text-4xl font-bold text-center mb-10">
@@ -140,10 +157,9 @@ const Menu = () => {
                     "--tw-ring-color": "#C0392B",
                     "--tw-ring-opacity": "0.5",
                   }}
+                  onClick={() => handleOrderNowClick(item)} 
                 >
-                  <Link to="/order" state={{ item }}> 
-                    Order Now
-                  </Link>
+                  Order Now 
                 </button>
               </div>
             </div>
