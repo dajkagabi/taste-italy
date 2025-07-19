@@ -37,15 +37,14 @@ const HeroSection = () => {
           variants={itemVariants}
           className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
         >
-          A Culinary Journey to Italy
+         Authentic Italian Flavors, Served with Passion
         </motion.h1>
 
         <motion.p
           variants={itemVariants}
           className="text-base md:text-lg lg:text-xl mb-8 text-white/90"
         >
-          Discover our handcrafted dishes, prepared with passion and tradition,
-          bringing you the authentic flavors of Italian cuisine.
+         Experience the taste of Italy in every bite
         </motion.p>
 
         <motion.div variants={itemVariants}>

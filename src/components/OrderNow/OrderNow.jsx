@@ -5,11 +5,11 @@ import OrderSummary from '../OrderSummary/OrderSummary';
 //Kosár, termékek, mennyiség,
 const OrderNow = ({ cartItems = [], onQuantityChange, onRemove }) => { 
   return (
-    <div className="min-h-screen bg-white text-gray-900 p-8">
+    <div className="min-h-screen bg-white text-gray-900 p-15">
       <div className="container mx-auto">
         <h1 className="text-3xl font-bold mb-8">Your Order</h1>
 
-        <div className="flex flex-col lg:flex-row gap-8">
+        <div className="flex flex-col lg:flex-row gap-15">
           <div className="flex-1">
             {cartItems.length > 0 ? (
               cartItems.map((item) => (
