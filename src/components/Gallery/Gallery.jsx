@@ -1,6 +1,6 @@
 import React from 'react';
-import galleryImg1 from '../../assets/d.jpg'; 
-import galleryImg2 from '../../assets/h2.jpg';
+import galleryImg1 from '../../assets/r.jpg'; 
+import galleryImg2 from '../../assets/pl.jpg';
 import galleryImg3 from '../../assets/t.jpg';
 import galleryImg4 from '../../assets/rab.jpg';
 
@@ -32,7 +32,7 @@ const Gallery = () => {
                 alt={image.alt}
                 className="w-full h-72 object-cover transform transition duration-300 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 bg-[#C0392B] bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-white text-lg font-semibold">{image.alt}</p>
               </div>
             </div>
