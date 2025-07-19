@@ -4,12 +4,14 @@
 
 ##  Cél
 
-Az oldal célja egy olasz étterem digitális arculatának megalkotása, amely bemutatja az étlapot, a hangulatot és lehetőséget ad az online foglalásra. Ideális példa frontend fejlesztéshez, reszponzív design gyakorlásához.
+Az oldal célja egy olasz étterem digitális arculatának megalkotása, amely bemutatja az étlapot, a hangulatot és lehetőséget ad az online foglalásra (telefon, időpont).
 
 ##  Használt technológiák
 
 - **React.js** 
-- **Tailwind CSS** 
+- **Tailwind CSS**
+- **MUI Icon**
+- **Framer motion**
 
 
 ##  Telepítési útmutató
